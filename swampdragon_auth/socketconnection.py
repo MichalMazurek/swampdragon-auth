@@ -5,8 +5,8 @@ from swampdragon.connections.sockjs_connection import DjangoSubscriberConnection
 try:
     from rest_framework.authtoken.models import Token
 except ImportError:
-    raise ImportError(
-        "Django Rest Framework is required")
+    raise ImportError("Django Rest Framework is required")
+
 
 class _RequestWrapper(object):
 
